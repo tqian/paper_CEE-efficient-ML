@@ -7,7 +7,7 @@ Code for paper "Efficient and Globally Robust Causal Excursion Effect Estimation
 -   application code: code for results in the "Application" section.
 -   simulation code: code for results in the "Simulation" section.
 
-## How to use the code
+## How to use the code to replicate results in the paper
 
 -   For results in the "Application" section, run each R script named "analysis Drink Less -" of each outcome type (binary, continuous, and count) in "application code" folder. Then, run "analysis Drink Less - make plot.R" file to make the figure. The data for the binary outcome is available [here](https://osf.io/mtcfa). The data for the continuous outcome and the count outcome is not publicly available.
 -   For results in the "Simulation" section, run the R scripts in each folder of the outcome types with the following orders in "simulation code" folder. Then, run the R script from the "plot making" folder within each outcome type folder.
