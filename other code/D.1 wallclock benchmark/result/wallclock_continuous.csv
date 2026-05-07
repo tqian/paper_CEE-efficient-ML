@@ -1,0 +1,7 @@
+"method","elapsed_sec","ok"
+"WCLS (baseline)",0.203375816345215,TRUE
+"GAM (no cross-fit)",0.377891063690186,TRUE
+"GAM (cross-fit, K=5)",0.580422163009644,TRUE
+"RF / ranger (cross-fit, K=5)",3.73537588119507,TRUE
+"SL.smooth (cross-fit, K=5)  [GLM+GAM+earth, no XGBoost/NN/RF]",4.92804002761841,TRUE
+"SL.all (cross-fit, K=5)  [includes XGBoost + NN]",61.2137880325317,TRUE

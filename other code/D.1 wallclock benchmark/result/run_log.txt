@@ -1,0 +1,84 @@
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.1     ✔ stringr   1.5.2
+✔ ggplot2   4.0.0     ✔ tibble    3.3.0
+✔ lubridate 1.9.4     ✔ tidyr     1.3.1
+✔ purrr     1.2.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Warning message:
+package ‘purrr’ was built under R version 4.5.2 
+Loading required package: nnls
+Loading required package: gam
+Loading required package: splines
+Loading required package: foreach
+
+Attaching package: ‘foreach’
+
+The following objects are masked from ‘package:purrr’:
+
+    accumulate, when
+
+Loaded gam 1.22-7
+
+Super Learner
+Version: 2.0-40
+Package created on 2025-12-14
+
+Warning messages:
+1: package ‘SuperLearner’ was built under R version 4.5.2 
+2: package ‘gam’ was built under R version 4.5.2 
+Loading required package: nlme
+
+Attaching package: ‘nlme’
+
+The following object is masked from ‘package:dplyr’:
+
+    collapse
+
+This is mgcv 1.9-3. For overview type 'help("mgcv-package")'.
+
+Attaching package: ‘mgcv’
+
+The following objects are masked from ‘package:gam’:
+
+    gam, gam.control, gam.fit, s
+
+Drink Less data: n = 349 participants, T = 30 decision points, total rows = 10470
+
+--- WCLS (baseline) ---
+Wall clock: 0.20 s
+
+--- GAM (no cross-fit) ---
+Wall clock: 0.38 s
+
+--- GAM (cross-fit, K=5) ---
+Wall clock: 0.58 s
+
+--- RF / ranger (cross-fit, K=5) ---
+Wall clock: 3.74 s
+
+--- SL.smooth (cross-fit, K=5)  [GLM+GAM+earth, no XGBoost/NN/RF] ---
+Wall clock: 4.93 s
+There were 50 or more warnings (use warnings() to see the first 50)
+
+--- SL.all (cross-fit, K=5)  [includes XGBoost + NN] ---
+Loading required namespace: nnet
+Loading required namespace: xgboost
+Wall clock: 61.21 s
+There were 50 or more warnings (use warnings() to see the first 50)
+
+
+========== Wall-clock summary (continuous outcome) ==========
+                                                        method elapsed_sec   ok
+                                               WCLS (baseline)   0.2033758 TRUE
+                                            GAM (no cross-fit)   0.3778911 TRUE
+                                          GAM (cross-fit, K=5)   0.5804222 TRUE
+                                  RF / ranger (cross-fit, K=5)   3.7353759 TRUE
+ SL.smooth (cross-fit, K=5)  [GLM+GAM+earth, no XGBoost/NN/RF]   4.9280400 TRUE
+              SL.all (cross-fit, K=5)  [includes XGBoost + NN]  61.2137880 TRUE
+
+R version: R version 4.5.1 (2025-06-13), machine: Mac.lan
+Time stamp: 2026-05-01 08:59:29
