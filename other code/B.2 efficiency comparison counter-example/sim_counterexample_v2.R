@@ -27,7 +27,7 @@
 library(rootSolve)
 
 # ----- Source the project's own estimator functions --------------------------
-funcs_dir <- "../D.1 wallclock benchmark/functions"
+funcs_dir <- "../F.1 wallclock benchmark/functions"
 source(file.path(funcs_dir, "eif.R"))
 source(file.path(funcs_dir, "wcls_original.R"))
 

@@ -1,10 +1,11 @@
 # Wall-clock benchmark
 
-Reproduces Table D.1 in the revised paper (Appendix D.1, "Practical
-Implementation"). Times Algorithm 1 (no cross-fitting) and Algorithm 2
-(cross-fitting, K = 5) for the continuous proximal outcome on the Drink Less
-MRT dataset (n = 349, T = 30), single-threaded on a local machine. Added in
-response to Reviewer 1 comment 3 on computational scalability.
+Reproduces Table F.1 in the revised paper (Appendix F.1, "Practical
+Implementation of the Proposed Algorithms"). Times Algorithm 1 of the main
+paper (no cross-fitting) and Algorithm D.1 of the appendix (cross-fitting,
+K = 5) for the continuous proximal outcome on the Drink Less MRT dataset
+(n = 349, T = 30), single-threaded on a local machine. Added in response to
+Reviewer 1 comment 3 on computational scalability.
 
 ## Files
 
